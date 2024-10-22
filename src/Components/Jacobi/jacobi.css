@@ -1,0 +1,83 @@
+
+.container-padre_jacobi{
+    font-family: Arial, sans-serif;
+    /* margin: 0; */
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    background-color: #18191a;
+}
+
+.container_jacobi {
+    border: white solid 2px;
+    background-color: #242526;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 600px;
+    color: #e4e6eb;
+  }
+
+
+  .title-newthon{
+    color: white;
+  }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 0fr);
+    gap: 8px;
+  }
+  
+  input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  
+  /* Posicionamientos específicos */
+  /* .input5 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+  }
+  
+  .input6 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  
+  .input7 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  
+  .input8 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  } */
+/*   
+  .input9,
+  .input10,
+  .input11,
+  .input12 {
+    
+    grid-row-start: 3;
+  } */
+
+  .igualesMatriz{
+    color: white;
+    text-align: center;
+  }
+  
