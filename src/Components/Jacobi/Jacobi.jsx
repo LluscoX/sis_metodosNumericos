@@ -85,7 +85,7 @@ const Jacobi = () => {
         <div className='fullscreen-container'>
             <div className='container-padre_jacobi'>
                 <div className="container_jacobi">
-                    <h1 className='title-newthon'>Jacobi</h1>
+                    <h1 className='title-newthon'>Metodo de Jacobi</h1>
 
                     <form onSubmit={(e) => e.preventDefault()}>
 
@@ -117,7 +117,7 @@ const Jacobi = () => {
                             onChange={(e) => setValorInicial(e.target.value)}
                         />
 
-                        <label htmlFor="tolerance" className="label-tolerance">Error aprox. a buscar:</label>
+                        <label htmlFor="tolerance" className="label-initialGuess">Error aprox. a buscar:</label>
                         <input
                             type="number"
                             id="tolerance"
@@ -127,7 +127,7 @@ const Jacobi = () => {
                             step="0.00001"
                         />
 
-                        <label htmlFor="iterations" className="label-iterations">Máx Iteraciones:</label>
+                        <label htmlFor="iterations" className="label-initialGuess">Máx Iteraciones:</label>
                         <input
                             type="number"
                             id="iterations"
@@ -140,17 +140,20 @@ const Jacobi = () => {
                     </form>
                 </div>
 
-                <div className='container2'>
-                    <h3 className='resultado_personal'>Resultado A1: {result}</h3>
-                    <h3 className='resultado_personal'>Resultado B2: {result1}</h3>
-                    <h3 className='resultado_personal'>Resultado C3: {result2}</h3>
+                <div class="container2_jacobi">
+                    <h2 className='text-light'><strong>RESULTADOS:</strong></h2>
+                    <h3 className="resultado_personal_jacobi">Resultado X1: {result}</h3>
+                    <h3 className="resultado_personal_jacobi">Resultado X2: {result1}</h3>
+                    <h3 className="resultado_personal_jacobi">Resultado X3: {result2}</h3>
 
-                    <h3 className='resultado_personal'>Error A1: {errorA1}</h3>
-                    <h3 className='resultado_personal'>Error B2: {errorB2}</h3>
-                    <h3 className='resultado_personal'>Error C3: {errorC3}</h3>
+                    <h2 className='text-light'>ERRORES: </h2>
+                    <h3 className="resultado_personal_jacobi">Error X1: {errorA1}</h3>
+                    <h3 className="resultado_personal_jacobi">Error X2: {errorB2}</h3>
+                    <h3 className="resultado_personal_jacobi">Error X3: {errorC3}</h3>
 
-                    {mensajeError && <h3 className='mensaje-error'>{mensajeError}</h3>} {/* Mostramos el mensaje de error */}
+                    {mensajeError && <h3 className="text-danger fs-5">{mensajeError}</h3>}
                 </div>
+                                
             </div>
         </div>
     );

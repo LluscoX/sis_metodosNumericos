@@ -80,7 +80,7 @@ const NewtonRaphsonCalculator = () => {
             <div className='container-padre'>
                 <div className="container">
                     <h1 className='title-newthon'>Newton-Raphson</h1>
-                    <form onSubmit={(e) => e.preventDefault()}>
+                    <form className='formNewton' onSubmit={(e) => e.preventDefault()}>
                         <label htmlFor="function" className="label-function">Función f(x):</label>
                         <input
                             type="text"
@@ -129,12 +129,12 @@ const NewtonRaphsonCalculator = () => {
                             onChange={(e) => setIterations(e.target.value)}
                         />
 
-                        <button type="button" onClick={calculateNewtonRaphson}>Calcular</button>
+                        <button className='btn_newton' ype="button" onClick={calculateNewtonRaphson}>Calcular</button>
                     </form>
                 </div>
 
                 <div className='container2'>
-                    <h3 className='resultado_personal'>{result}</h3>
+                    <h3 className='resultado_personal_newton'>{result}</h3>
                 </div>
             </div>
         </div>

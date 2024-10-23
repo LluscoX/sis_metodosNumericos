@@ -1,94 +1,121 @@
-
-.container-padre_jacobi{
-    font-family: Arial, sans-serif;
-    /* margin: 0; */
-    padding: 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 750px;
-    background-color: #18191a;
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+.fullscreen-container {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #18191a;
+}
+
+.container-padre_jacobi {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alineación superior de los contenedores */
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #242526; /* Fondo del contenedor padre */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para el formulario de Jacobi */
 .container_jacobi {
-    border: white solid 2px;
-    background-color: #242526;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    width: 600px;
-    color: #e4e6eb;
-  }
+  background-color: #3a3b3c; /* Fondo más claro dentro del tema oscuro */
+  border: 2px solid #3b5998; /* Azul tipo Facebook */
+  border-radius: 8px;
+  padding: 30px;
+  width: 48%; /* Ajusta el ancho */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #e4e6eb;
+}
 
-  .container2_jacobi{
-    border: white solid 2px;
-    background-color: #242526;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin-left: 50px;
-    width: 980px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .title-newthon{
-    color: white;
-  }
+.title-newthon {
+  /* font-size: 2rem; */
+  color: #3b5998; /* Azul tipo Facebook */
+  margin-bottom: 20px;
+  text-align: center;
+}
+.resultado_personal_jacobi{
+  color: #e4e6eb;
+}
 
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #e4e6eb;
+}
+
+input[type="text"], input[type="number"] {
+  width: 80px; /* Tamaño fijo más grande */
+  height: 40px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #242526;
+  color: #e4e6eb;
+  border: 1px solid #3b5998; /* Azul en los bordes */
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007BFF; /* Azul brillante en foco */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3b5998; /* Azul tipo Facebook */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Azul más brillante en hover */
+}
+
+/* Estilo para los resultados y errores */
+.container2_jacobi {
+  background-color: #3a3b3c; /* Fondo oscuro dentro del tema */
+  border: 2px solid #3b5998; /* Azul en los bordes */
+  border-radius: 8px;
+  padding: 20px;
+  width: 48%; /* Ajuste del ancho */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #e4e6eb;
+}
+
+
+.mensaje-error {
+  color: rgb(235, 94, 94);
+  font-weight: bold;
+}
+
+/* Estilo para la matriz */
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 0fr);
-    gap: 8px;
-  }
-  
-  input {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input:focus {
-    outline: none;
-    border-color: #007BFF;
-  }
-  
-  /* Posicionamientos específicos */
-  /* .input5 {
-    grid-column-start: 4;
-    grid-row-start: 2;
-  }
-  
-  .input6 {
-    grid-column-start: 3;
-    grid-row-start: 2;
-  }
-  
-  .input7 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-  }
-  
-  .input8 {
-    grid-column-start: 1;
-    grid-row-start: 2;
-  } */
-/*   
-  .input9,
-  .input10,
-  .input11,
-  .input12 {
-    
-    grid-row-start: 3;
-  } */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 8px;
+}
 
-  .igualesMatriz{
-    color: white;
-    text-align: center;
-  }
-  .mensaje-error{color: white;}
+.igualesMatriz {
+  font-size: 1.2rem;
+  color: #e4e6eb;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.label-initialGuess{
+  margin-right: 8px;
+}
