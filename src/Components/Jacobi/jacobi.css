@@ -21,7 +21,18 @@
     color: #e4e6eb;
   }
 
-
+  .container2_jacobi{
+    border: white solid 2px;
+    background-color: #242526;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-left: 50px;
+    width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .title-newthon{
     color: white;
   }
@@ -80,4 +91,4 @@
     color: white;
     text-align: center;
   }
-  
+  .mensaje-error{color: white;}
