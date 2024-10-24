@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div class="navbar-nav mr-auto py-0">
                     <a href="/" className="nav-item nav-link active">Inicio</a>
                     <a href="/newtonRaphon" className="nav-item nav-link"> Newton raphon</a>
-                    <a href="service.html" className="nav-item nav-link">Gauss-seidel</a>
+                    <a href="/gaussSeidel" className="nav-item nav-link">Gauss-seidel</a>
                     <a href="/jacobi" className="nav-item nav-link">Jacobi</a>
                 </div>
                 <a  className="btn btn-lg btn-primary px-3 d-none d-lg-block">Brayan Llusco V.</a>

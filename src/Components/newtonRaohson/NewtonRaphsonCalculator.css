@@ -1,104 +1,108 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
 .fullscreen-container {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh; 
-    background-color: #18191a; /* Fondo oscuro en toda la pantalla */
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #18191a; /* Fondo oscuro en toda la pantalla */
+}
 
 .container-padre {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px;
-    background-color: #18191a; /* Fondo oscuro solo para este contenedor */
-  }
-  
-  /* Restantes estilos específicos del contenedor */
-  .container {
-    border: white solid 2px;
-    background-color: #242526;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 400px;
-    color: #e4e6eb;
-  }
-  
-  .container h1 {
-    text-align: center;
-    color: white;
-  }
-  
-  .title-newthon{
-    margin-bottom: 40px;
-  }
-  /* ... (el resto de los estilos que ya te di, sin modificar el body) */
-  
-  /* Estilo específico para el formulario */
-  .formNewton {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px; /* Espacio entre inputs */
-  }
-  
-  /* Estilo para cada label individual */
-  .label-function, .label-derivative, .label-initialGuess, .label-tolerance, .label-iterations {
-    /* grid-column: span 2;  */
-    font-weight: bold;
-    color: #b0b3b8; /* Gris claro */
-  }
-  
-  /* Estilo para cada input individual */
-  .input-function, .input-derivative, .input-initialGuess, .input-tolerance, .input-iterations {
-    padding: 10px;
-    border: 1px solid #3a3b3c;
-    border-radius: 6px;
-    background-color: #3a3b3c;
-    color: #e4e6eb; /* Texto claro en los inputs */
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .btn_newton {
-    grid-column: span 2;
-    background-color: #2d88ff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  btn_newton:hover {
-    background-color: #1877f2;
-  }
-  
-  /* Estilo del segundo contenedor */
-  .container2 {
-    border: white solid 2px;
-    background-color: #242526;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin-left: 50px;
-    width: 340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .resultado_personal_newton {
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Ajustado para alinear con los contenedores */
+  align-items: flex-start; /* Alineación superior de los contenedores */
+  width: 90%; /* Aumentado para que ocupe más espacio */
+  max-width: 700px; /* Limitar el ancho máximo */
+  background-color: #18191a; /* Fondo oscuro para el contenedor padre */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  border: 2px solid #3b5998; /* Azul tipo Facebook */
+  background-color: #242526;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 30px; /* Aumentado para mayor espacio interno */
+  width: 20%; /* Ajustar ancho para alinear con el padre */
+  color: #e4e6eb;
+}
+
+/* Títulos */
+.container h1 {
+  text-align: center;
+  color: #3b5998; /* Azul tipo Facebook */
+}
+
+.title-newthon {
+  margin-bottom: 20px; /* Reducido para mantener uniformidad */
+}
+
+/* Estilo específico para el formulario */
+.formNewton {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 15px; /* Espacio entre inputs */
+}
+
+/* Estilo para cada label individual */
+.label-function, .label-derivative, .label-initialGuess, .label-tolerance, .label-iterations {
+  font-weight: bold;
+  color: #b0b3b8; /* Gris claro */
+}
+
+/* Estilo para cada input individual */
+.input-function, .input-derivative, .input-initialGuess, .input-tolerance, .input-iterations {
+  border: 1px solid #3b5998; /* Bordes azules */
+  border-radius: 6px;
+  background-color: #3a3b3c;
+  color: #e4e6eb; /* Texto claro en los inputs */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo para el botón */
+.btn_newton {
+  grid-column: span 2; /* Ocupa ambas columnas */
+  background-color: #3b5998; /* Azul tipo Facebook */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_newton:hover {
+  background-color: #0056b3; /* Azul más brillante en hover */
+}
+
+/* Estilo del segundo contenedor */
+.container2 {
+  border: 2px solid #3b5998; /* Azul tipo Facebook */
+  background-color: #242526;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-left: 50px;
+  width: 48%; /* Ajuste del ancho para alinear con el padre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Resultados */
+.resultado_personal_newton {
+  font-size: 20px;
+  color: #e4e6eb; /* Texto claro para resultados */
+  text-align: center;
+}

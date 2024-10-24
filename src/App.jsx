@@ -7,6 +7,7 @@ import NewtonRaphsonCalculator from './Components/newtonRaohson/NewtonRaphsonCal
 
 import Jacobi from './Components/Jacobi/Jacobi'
 
+import GaussSeidel from './Components/GaussSeidel/GaussSeidel';
 
 import './source/css/style.css'
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/' element={<Carrousel />} />
           <Route path="/newtonRaphon" element={<NewtonRaphsonCalculator/>} />
           <Route path="/jacobi" element={<Jacobi/>} />
+          <Route path="/gaussSeidel" element={<GaussSeidel/>} />
         </Routes>
       </Router>
     </div>

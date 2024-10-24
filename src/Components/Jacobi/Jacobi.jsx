@@ -42,7 +42,7 @@ const Jacobi = () => {
         const calcularError = (valorNuevo, valorAntiguo) => Math.abs((valorNuevo - valorAntiguo) / valorNuevo);
     
         while (iter < iteraciones) {
-            // Despejamos las ecuaciones
+            
             let resultadoA1 = (parseFloat(a4) - parseFloat(a2) * xb - parseFloat(a3) * xc) / parseFloat(a1);
             let resultadoB2 = (parseFloat(b4) - parseFloat(b1) * xa - parseFloat(b3) * xc) / parseFloat(b2);
             let resultadoC3 = (parseFloat(c4) - parseFloat(c1) * xa - parseFloat(c2) * xb) / parseFloat(c3);
@@ -78,6 +78,7 @@ const Jacobi = () => {
         if (!errorEncontrado) {
             setMensajeError(`No se encontró ningún error menor o igual al margen de error (${margenError}) en el límite de ${iteraciones} iteraciones.`);
         }
+            // Despejamos las ecuaciones
     };
     
 
