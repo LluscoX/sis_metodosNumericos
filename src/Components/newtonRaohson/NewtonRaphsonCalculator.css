@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
   box-sizing: border-box;
 }
@@ -11,68 +11,66 @@
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  background-color: #18191a; /* Fondo oscuro en toda la pantalla */
+  background-color: #18191a; 
 }
 
 .container-padre {
   margin: 0;
-  padding: 0;
+  padding: 50px;
   display: flex;
-  justify-content: space-between; /* Ajustado para alinear con los contenedores */
-  align-items: flex-start; /* Alineación superior de los contenedores */
-  width: 90%; /* Aumentado para que ocupe más espacio */
-  max-width: 700px; /* Limitar el ancho máximo */
-  background-color: #18191a; /* Fondo oscuro para el contenedor padre */
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 900px; 
+  background-color:#242526;
+  border-radius: 15px;
 }
 
 /* Estilo para el contenedor principal */
 .container {
-  border: 2px solid #3b5998; /* Azul tipo Facebook */
+  border: 2px solid #3b5998; 
   background-color: #242526;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  padding: 30px; /* Aumentado para mayor espacio interno */
-  width: 20%; /* Ajustar ancho para alinear con el padre */
+  padding: 30px; 
+  width: 20%; 
   color: #e4e6eb;
 }
 
 /* Títulos */
 .container h1 {
   text-align: center;
-  color: #3b5998; /* Azul tipo Facebook */
+  color: #3b5998; 
 }
 
 .title-newthon {
-  margin-bottom: 20px; /* Reducido para mantener uniformidad */
+  margin-bottom: 20px; 
 }
 
 /* Estilo específico para el formulario */
 .formNewton {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-  gap: 15px; /* Espacio entre inputs */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px; 
 }
 
-/* Estilo para cada label individual */
 .label-function, .label-derivative, .label-initialGuess, .label-tolerance, .label-iterations {
   font-weight: bold;
-  color: #b0b3b8; /* Gris claro */
+  color: #b0b3b8;
 }
 
-/* Estilo para cada input individual */
 .input-function, .input-derivative, .input-initialGuess, .input-tolerance, .input-iterations {
-  border: 1px solid #3b5998; /* Bordes azules */
+  border: 1px solid #3b5998;
   border-radius: 6px;
   background-color: #3a3b3c;
-  color: #e4e6eb; /* Texto claro en los inputs */
+  color: #e4e6eb; 
   width: 100%;
   box-sizing: border-box;
 }
 
 /* Estilo para el botón */
 .btn_newton {
-  grid-column: span 2; /* Ocupa ambas columnas */
-  background-color: #3b5998; /* Azul tipo Facebook */
+  grid-column: span 2; 
+  background-color: #3b5998; 
   color: white;
   padding: 10px;
   border: none;
@@ -83,18 +81,18 @@
 }
 
 .btn_newton:hover {
-  background-color: #0056b3; /* Azul más brillante en hover */
+  background-color: #0056b3; 
 }
 
 /* Estilo del segundo contenedor */
 .container2 {
-  border: 2px solid #3b5998; /* Azul tipo Facebook */
+  border: 2px solid #3b5998; 
   background-color: #242526;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin-left: 50px;
-  width: 48%; /* Ajuste del ancho para alinear con el padre */
+  width: 48%; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,6 +101,6 @@
 /* Resultados */
 .resultado_personal_newton {
   font-size: 20px;
-  color: #e4e6eb; /* Texto claro para resultados */
+  color: #e4e6eb; 
   text-align: center;
 }

@@ -137,7 +137,7 @@ const Jacobi = () => {
                             onChange={(e) => setIteraciones(e.target.value)}
                         />
 
-                        <button type="button" onClick={verificarConst}>Calcular</button>
+                        <button type="button" className="bg-primary rounded" onClick={verificarConst}>Calcular</button>
                     </form>
                 </div>
 

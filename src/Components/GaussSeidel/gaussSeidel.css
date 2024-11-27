@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,34 +10,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #18191a;
+    background-color: #2a2a2a;
   }
   
   .container-padre_gaussSeidel {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Alineación superior de los contenedores */
+    align-items: flex-start; 
     width: 90%;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: #242526; /* Fondo del contenedor padre */
+    padding: 50px;
+    background-color: #242526; 
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
   
   /* Estilo para el formulario de Gauss-Seidel */
   .container_gaussSeidel {
-    background-color: #3a3b3c; /* Fondo más claro dentro del tema oscuro */
-    border: 2px solid #3b5998; /* Azul tipo Facebook */
+    background-color: #3a3b3c; 
+    border: 2px solid #3b5998; 
     border-radius: 8px;
     padding: 30px;
-    width: 48%; /* Ajusta el ancho */
+    width: 48%; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     color: #e4e6eb;
   }
   
   .title-gaussSeidel {
-    color: #3b5998; /* Azul tipo Facebook */
+    color: #ffffff; 
     margin-bottom: 20px;
     text-align: center;
   }
@@ -53,26 +52,26 @@
   }
   
   input[type="text"], input[type="number"] {
-    width: 80px; /* Tamaño fijo más grande */
+    width: 80px; 
     height: 40px;
     text-align: center;
     font-size: 1rem;
     background-color: #242526;
     color: #e4e6eb;
-    border: 1px solid #3b5998; /* Azul en los bordes */
+    border: 1px solid #3b5998; 
     border-radius: 4px;
     margin-right: 10px;
   }
   
   input:focus {
     outline: none;
-    border-color: #007BFF; /* Azul brillante en foco */
+    border-color: #007BFF; 
   }
   
   button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #3b5998; /* Azul tipo Facebook */
+    background-color: #3b5998; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -80,16 +79,16 @@
   }
   
   button:hover {
-    background-color: #0056b3; /* Azul más brillante en hover */
+    background-color: #0056b3;
   }
   
   /* Estilo para los resultados y errores */
   .container2_gaussSeidel {
-    background-color: #3a3b3c; /* Fondo oscuro dentro del tema */
-    border: 2px solid #3b5998; /* Azul en los bordes */
+    background-color: #3a3b3c; 
+    border: 2px solid #3b5998; 
     border-radius: 8px;
     padding: 20px;
-    width: 48%; /* Ajuste del ancho */
+    width: 48%; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     color: #e4e6eb;
   }

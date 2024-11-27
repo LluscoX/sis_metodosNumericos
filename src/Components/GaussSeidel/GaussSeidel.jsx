@@ -4,7 +4,7 @@ import './gaussSeidel.css'
 
 const GaussSeidel = () => {
 
-    const [a1, setA1] = useState('');
+    const [a1, setA1] = useState(3);
     const [a2, setA2] = useState('');
     const [a3, setA3] = useState('');
     const [a4, setA4] = useState('');
@@ -123,7 +123,7 @@ const GaussSeidel = () => {
                             onChange={(e) => setIteraciones(e.target.value)}
                         />
 
-                        <button type="button" onClick={verificarConst}>Calcular</button>
+                        <button type="button" className='bg-primary rounded' onClick={verificarConst}>Calcular</button>
                     </form>
                 </div>
 

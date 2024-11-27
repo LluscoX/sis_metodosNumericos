@@ -12,11 +12,14 @@ const Navbar = () => {
             <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
                     <a href="/" className="nav-item nav-link active">Inicio</a>
-                    <a href="/newtonRaphon" className="nav-item nav-link"> Newton raphon</a>
-                    <a href="/gaussSeidel" className="nav-item nav-link">Gauss-seidel</a>
+                    <a href="/newtonRaphon" className="nav-item nav-link"> Newton Raphson</a>
+                    <a href="/gaussSeidel" className="nav-item nav-link">Gauss-Seidel</a>
                     <a href="/jacobi" className="nav-item nav-link">Jacobi</a>
+                    <a href="/jacobiSORT" className=" nav-link"> Jacobi SORT</a>
+                    <a href="/gaussSeidelSORT" className=" nav-link"> Gauss-Seidel SORT</a>
+                    <a href="/informacion" className=" nav-link"> Como Realizar...?</a>
                 </div>
-                <a  className="btn btn-lg btn-primary px-3 d-none d-lg-block">Brayan Llusco V.</a>
+                <a  className="btn btn-lg btn-primary px-3 d-none d-lg-block">Brayan x Anahi </a>
             </div>
         </nav>
     </div>  
